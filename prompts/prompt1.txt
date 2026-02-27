@@ -1,1 +1,19 @@
-
+You are a senior frontend engineer building an internal business tool.
+Build a single-page admission form with the following fields:
+Full Name (text)
+Email (text)
+Phone (text)
+Date of Birth (date picker)
+Highest Qualification (dropdown: B.Tech, B.E., B.Sc, BCA, M.Tech, M.Sc, MCA, MBA)
+Graduation Year (number input)
+Percentage/CGPA (number input with toggle to switch between Percentage mode and CGPA mode)
+Screening Test Score (number 0-100)
+Interview Status (dropdown: Cleared, Waitlisted, Rejected)
+Aadhaar Number (text)
+Offer Letter Sent (Yes/No toggle)
+Constraints:
+Clean professional design
+Single card layout
+Each field must show a validation message area below it
+Submit button disabled initially
+Do NOT add validation logic yet
