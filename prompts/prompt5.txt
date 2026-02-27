@@ -1,1 +1,12 @@
-
+Enhance the Admin Rule Configuration section:
+Convert rule display into editable input fields.
+Add an "Update Rules" button.
+When clicked:
+Update the RULE_CONFIG object dynamically.
+Re-run validation using new rule values.
+Add confirmation message:
+"Rules updated successfully."
+Requirements:
+Do not reload page.
+Do not break existing strict and soft logic.
+Validation must instantly reflect new rule values.
