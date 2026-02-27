@@ -1,0 +1,5 @@
+{
+  "name": "Admission Portal",
+  "description": "Internal business tool for managing student admissions and screening status.",
+  "requestFramePermissions": []
+}
