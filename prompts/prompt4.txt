@@ -1,1 +1,18 @@
-
+Refactor the validation system to use a centralized RULE_CONFIG object.
+Create:
+const RULE_CONFIG = {
+minAge: 18,
+maxFutureGradYears: 2,
+minPercentage: 60,
+minCGPA: 6.0,
+minScreeningScore: 40,
+highRiskThreshold: 2
+}
+Update all strict and soft rule validations to use values from RULE_CONFIG instead of hardcoded numbers.
+Also:
+Add a small section on top of the form called:
+"Admin Rule Configuration (Demo)"
+Display current rule values in read-only format.
+Do not break existing logic.
+Do not remove strict vs soft distinction.
+Just refactor to use centralized config.
