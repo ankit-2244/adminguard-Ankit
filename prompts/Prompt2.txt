@@ -1,1 +1,27 @@
-
+Now add STRICT validation rules to the form.
+Strict rules (no exceptions allowed):
+Full Name:
+Cannot be blank
+Minimum 2 characters
+Must not contain numbers
+Email:
+Must be valid email format (contains @ and domain)
+Phone:
+Exactly 10 digits
+Must start with 6, 7, 8, or 9
+Highest Qualification:
+Must be selected (cannot be empty)
+Interview Status:
+If "Rejected" is selected:
+Block submission completely
+Show a red banner at top: "Rejected candidates cannot be enrolled."
+Aadhaar Number:
+Exactly 12 digits
+Numbers only
+Offer Letter Sent:
+Cannot be "Yes" unless Interview Status is "Cleared" or "Waitlisted"
+Requirements:
+Show validation errors INLINE below each field
+Errors in red color
+Validate in real-time as user types
+Submit button must remain disabled until all strict rules pass
