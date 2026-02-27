@@ -1,1 +1,28 @@
-
+Add an Audit Logging System to the application.
+Requirements:
+On successful form submission:
+Create an object with:
+fullName
+email
+interviewStatus
+exceptionCount
+riskLevel ("Low", "Medium", "High")
+timestamp (current date-time)
+Determine riskLevel:
+0 exceptions → Low
+1-2 exceptions → Medium
+RULE_CONFIG.highRiskThreshold → High
+Store submission records in localStorage as an array:
+Key name: "admitguard_audit_log"
+Add a new section below the form:
+"Audit Log (Recent Submissions)"
+Display:
+Name
+Risk Level (color coded)
+Exception Count
+Timestamp
+Add a "Clear Log" button.
+Requirements:
+Do not break existing validation.
+Submission only happens if strict rules pass.
+Log must persist on page refresh.
