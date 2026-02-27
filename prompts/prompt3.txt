@@ -1,1 +1,39 @@
-
+Now implement SOFT validation rules.
+Soft rules (submission allowed but flagged as exception):
+Date of Birth:
+Candidate must be at least 18 years old
+If under 18:
+Show orange warning message
+Allow submission
+Count as exception
+Graduation Year:
+Must not be more than 2 years in future
+If invalid:
+Show warning
+Allow submission
+Count as exception
+Percentage/CGPA:
+If in Percentage mode:
+Minimum required = 60%
+If in CGPA mode:
+Minimum required = 6.0
+If below minimum:
+Show warning
+Allow submission
+Count as exception
+Screening Test Score:
+If less than 40:
+Show warning
+Allow submission
+Count as exception
+Add the following:
+Maintain an "exceptionCount" variable
+Show a small badge near the Submit button:
+"Exceptions: X"
+If exceptionCount > 2:
+Show yellow banner:
+"High Risk Application - Multiple Soft Rule Violations"
+Requirements:
+Warnings in orange color
+Do NOT block submit
+Strict rules still block submission
